@@ -81,14 +81,14 @@
           <div class="item--contents">
             <p class="item">性別 <span class="symbol">※</span></p>
             <div class="radio">
+              <label for="boy">
+                <input type="radio" name="gender" value="men" id="boy" required>男性
+              </label for="girl">
               <label>
-                <input type="radio" name="gender" value="men" required>男性
+                <input type="radio" name="gender" value="women" id="girl">女性
               </label>
-              <label>
-                <input type="radio" name="gender" value="women">女性
-              </label>
-              <label>
-                <input type="radio" name="gender" value="else">その他
+              <label for="anything">
+                <input type="radio" name="gender" value="else" id="anything">その他
               </label>
             </div>
           </div>
@@ -114,7 +114,7 @@
 
           <div class="item--contents">
             <p class="item">メールアドレス <span class="symbol">※</span></p>
-            <input type="text" name="mail--address" required>
+            <input type="email" name="mail--address" required>
           </div>
 
           <div class="item--contents">
@@ -137,18 +137,18 @@
 
           <div class="item--contents">
             <p class="item">電話番号 <span class="symbol">※</span></p>
-            <input type="text" name="phone" required>
+            <input type="tel" name="phone" required>
           </div>
         </div>
 
         <div class="information">
           <p class="item--title">購読情報</p>
 
-          <label class="checkbox">
-            <input type="checkbox" name="information" value="mail">メールマガジン</span>
+          <label for="mail_magazine" class="checkbox">
+            <input type="checkbox" name="information" value="mail" id="mail_magazine">メールマガジン</span>
           </label><br>
-          <label class="checkbox">
-            <input type="checkbox" name="information" value="coupon">クーポン
+          <label for="voucher" class="checkbox">
+            <input type="checkbox" name="information" value="coupon" id="voucher">クーポン
           </label>
         </div>
 
